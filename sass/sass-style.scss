@@ -195,52 +195,115 @@
 }
 
 
-.section__item {
-    position: relative;
-    border: 1px solid red;
-    margin-bottom: 140px;
-}
+//SECTION
+.section {
 
-.section__inner {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 70px;
+    &__item {
+        position: relative;
+        margin-bottom: 140px;
+    }
 
-}
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 70px;
+    
+    }
 
-.section__title {
-    text-align: center;
-    font-size: 44px;
-    text-transform: uppercase;;
-}
+    &__inner--reverse {
+        flex-direction: row-reverse;
+    }
+    
+    &__title {
+        text-align: center;
+        font-size: 44px;
+        text-transform: uppercase;
+        margin-bottom: 100px;
+       
+        // added horizontal line before title
+        &::before {
+            content: "";
+            display:block;
+            max-width: 100px;
+            height: 1px;
+            margin: 100px auto 42px auto;
+            background-color: #000000;
+        }
+    }
 
-.section__content-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    max-width: 470px;
-}
+    &__content-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 470px;
+        padding: 5px;
+    }
 
-.section__picture-block {
-    max-width: 630px;
-    float: left;
+    
+    &__picture-block {
+        display: block;
+        max-width: 630px;
+    
+        &__image {
+            width: 100%;
+        }
+    
+    }
 
-    &__image {
-        width: 100%;
+    &__button {
+        max-width: 190px;
+    }
+    
+// modifier posititon backgroun image
+    &__picture-block--position_left {
+        position: absolute;
+        z-index: -1;
+    }
+    
+    &__picture-block--position_right {
+        position: absolute;
+        right: 0;
+        z-index: -1;
     }
 
 }
 
-.section__picture-block--position_left {
-    position: absolute;
-    z-index: -1;
+
+//Section text-block
+.text-block {
+
+    &__subtitle {
+        font-size: 22px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-size: 44px;
+        text-transform: uppercase;
+        margin-bottom: 42px;
+    }
+
+    &__text {
+        font-size: 18px;
+        margin-bottom: 42px;
+    }
 }
 
-.section__picture-block--position_right {
-    position: absolute;
-    right: 0;
-    z-index: -1;
 
+// BUTTON (property primary)
+.btn {
+    min-width: 224px;
+    padding: 20px 5px;
+    background-color: #ffffff;
+    font-family: 'Aleo', serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid #000000;
+    cursor: pointer;
+  
+    &:hover {
+      box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.4);
+    }
 }
 
 
