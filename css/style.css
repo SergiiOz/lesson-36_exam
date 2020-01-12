@@ -10,6 +10,10 @@
   margin: 0 auto;
 }
 
+.wrapper__gallery {
+  padding-bottom: 40px;
+}
+
 .header {
   position: relative;
   background-image: url(../images/img-bg-01.jpg);
@@ -247,14 +251,7 @@
 }
 
 /* ITEM */
-.gallery {
-  display: flex;
-  justify-content: space-around;
-}
-
 .item {
-  display: flex;
-  max-width: 33.33%;
   padding: 10px;
 }
 
@@ -281,10 +278,12 @@
 .item__title {
   padding: 0 5px 10px 10px;
   margin-bottom: 30px;
+  overflow: auto;
 }
 
 .item__text {
   padding: 0 5px 10px 10px;
+  overflow: hidden;
 }
 
 .calendar {
