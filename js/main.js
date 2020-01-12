@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     // });
 
-    $('.gallery').slick({
+    $('.slider').slick({
         autoplay: true,
         speed: 3000,
         infinite: true,
