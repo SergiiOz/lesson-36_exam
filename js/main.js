@@ -16,6 +16,9 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 1,
         dots: true,
+        prevArrow: $('.btn-icon-arrow__slider-prev'), //use my custom icon
+        nextArrow: $('.btn-icon-arrow__slider-next'), //use my custom icom
+
     });
 
 });
