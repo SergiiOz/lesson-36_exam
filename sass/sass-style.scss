@@ -357,13 +357,6 @@
 
 // NEWS
 
-/* ITEM */
-// .slider {
-//     display: flex;
-//     flex-direction: row;
-// }
-
-
 .item {
     padding: 15px;
 }
@@ -422,6 +415,36 @@
     border-radius: 50%;
     margin-right: 20px;
 }
+
+
+//======================
+
+//GALLERY
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 0px;
+    list-style-type: none;
+    margin-bottom: 100px;
+    // height: 440px;
+
+}
+
+.gallery__item {
+    width: 25%;
+    height: 30%;
+    padding: 3px;
+}
+
+.gallery__item--half {
+    width: 50%;
+    height: 100%;
+    
+}
+
+
 
 
 

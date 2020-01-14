@@ -279,7 +279,6 @@
   box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.4);
 }
 
-/* ITEM */
 .item {
   padding: 15px;
 }
@@ -332,6 +331,26 @@
   width: 60px;
   border-radius: 50%;
   margin-right: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 0px;
+  list-style-type: none;
+  margin-bottom: 100px;
+}
+
+.gallery__item {
+  width: 25%;
+  height: 30%;
+  padding: 3px;
+}
+
+.gallery__item--half {
+  width: 50%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
