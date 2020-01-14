@@ -147,9 +147,16 @@
 
     &__item {
         margin-left: 20px;
+        transition: 0.3s;
+
+        &:hover {
+            border-color: #000000;
+            opacity: 0.5;
+            cursor: pointer;
+        }
     }
 
-    &__border {
+    &__icon-block {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -181,6 +188,7 @@
     border-radius: 50%;
     height: 40px;
     width: 40px;
+    transition: 0.5s;
     
     &__header-scroll {
         bottom: 0;
@@ -201,6 +209,16 @@
         right: -50px;
         transform: translateY(-50%);
     }
+
+    &:hover {
+        border-color: #000000;
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    &:hover .icon-arrow {
+        fill: #000000;
+    }
 }
 
 //svg arrow
@@ -208,6 +226,7 @@
     fill: #ffffff;
     height: 20px;
     width: 20px;
+    transition: 0.5s
 }
 
 // MAIN
