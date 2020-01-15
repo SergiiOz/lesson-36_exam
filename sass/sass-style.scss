@@ -100,9 +100,6 @@
         background-color: #6880e8;
     }
     
-    // @include tablet-screen() {
-    //     display: flex;
-    // }
 }
 
 .hamburger-icon {
@@ -296,11 +293,18 @@
     
     }
 
+    &__button-block{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
     &__button {
         max-width: 190px;
     }
+
     
-// modifier posititon backgroun image
+// modifier posititon background image
     &__picture-block--position_left {
         position: absolute;
         z-index: -1;
@@ -346,9 +350,11 @@
     text-transform: uppercase;
     border: 1px solid #000000;
     cursor: pointer;
+    transition: 0.3s;
   
     &:hover {
-      box-shadow: 0 0 5px 5px rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 5px 5px rgba(12, 12, 12, 0.116);
+    background-color: #f8fafb;
     }
 }
 
@@ -423,7 +429,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 0px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 
     &__section {
         display: flex;
@@ -434,6 +440,11 @@
     &__item {
         width: 50%;
         padding: 3px;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.02);
+        }
     }
     
     //modifier
