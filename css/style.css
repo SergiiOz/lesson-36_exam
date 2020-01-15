@@ -12,7 +12,6 @@
 
 .wrapper__slider {
   position: relative;
-  padding-bottom: 40px;
 }
 
 .header {
@@ -189,6 +188,10 @@
   transition: 0.5s;
 }
 
+.main__section {
+  padding: 100px 0;
+}
+
 .main__section--backgroud {
   background-image: url(../images/img-bg-02.jpg);
   background-position: center;
@@ -199,28 +202,28 @@
 
 .section__item {
   position: relative;
-  margin-bottom: 140px;
 }
 .section__inner {
   display: flex;
   justify-content: space-between;
   padding-top: 70px;
+  margin: 40px 0;
 }
 .section__inner--reverse {
   flex-direction: row-reverse;
+  margin-top: 140px;
 }
 .section__title {
   text-align: center;
   font-size: 44px;
   text-transform: uppercase;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .section__title::before {
   content: "";
   display: block;
   max-width: 100px;
   height: 1px;
-  padding-top: 100px;
   border-bottom: 1px solid #000000;
   margin: 0 auto 42px auto;
 }
@@ -241,7 +244,6 @@
 .section__button-block {
   display: flex;
   justify-content: center;
-  margin-bottom: 50px;
 }
 .section__button {
   max-width: 190px;
@@ -371,12 +373,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 500px;
-}
-
-.footer__inner {
-  display: flex;
-  justify-content: space-between;
 }
 
 .footer__section-form {
@@ -386,7 +382,69 @@
   transform: translate(-50%, -50%);
   z-index: 1;
   border: 1px solid #000000;
-  min-height: 400px;
+  width: 100%;
+  max-width: 770px;
+  background-color: #ffffff;
+  padding: 60px;
+}
+
+.section-bottom__inner {
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.section-bottom__wrapper {
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.section-bottom__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__content {
+  display: flex;
+}
+
+.footer__content-block {
+  display: flex;
+}
+
+.content-block__item {
+  width: 50%;
+}
+
+.wrapper__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.form__input {
+  font-size: 18px;
+  border: none;
+  border-bottom: 1px solid #000000;
+  padding: 20px 0;
+}
+
+.footer-form__btn {
+  min-width: 140px;
+  margin-top: 20px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.address__item {
+  margin-top: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
