@@ -281,51 +281,39 @@
 
 .item {
   padding: 15px;
+  /*added block into ITEM */
 }
-
-/*added block into ITEM */
 .item__content {
   display: flex;
   flex-direction: column;
   font-size: 18px;
   background-color: #ffffff;
 }
-
 .item__main {
   flex: 1 1 auto;
 }
-
-.picture {
-  width: 100%;
-}
-
 .item__text-block {
   padding: 30px 20px;
 }
-
 .item__title {
   font-size: 22px;
   text-transform: uppercase;
   overflow: auto;
 }
-
 .item__text {
   font-size: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-
 .item__calendar {
   opacity: 0.7;
 }
-
 .item__footer {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0 0 30px 20px;
 }
-
 .item__avatar {
   height: 60px;
   width: 60px;
@@ -333,24 +321,28 @@
   margin-right: 20px;
 }
 
+.picture {
+  width: 100%;
+}
+
 .gallery {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 0px;
-  list-style-type: none;
   margin-bottom: 100px;
 }
-
+.gallery__section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
 .gallery__item {
-  width: 25%;
-  height: 30%;
+  width: 50%;
   padding: 3px;
 }
-
-.gallery__item--half {
-  width: 50%;
-  height: 100%;
+.gallery__item--large {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

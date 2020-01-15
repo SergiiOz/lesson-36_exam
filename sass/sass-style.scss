@@ -352,70 +352,67 @@
     }
 }
 
-
 //=====================
 
 // NEWS
 
 .item {
     padding: 15px;
+    
+    /*added block into ITEM */
+    &__content {
+        display: flex;
+        flex-direction: column;
+        font-size: 18px;
+        background-color: #ffffff;
+    }
+    
+    &__main {
+        flex: 1 1 auto;
+    }
+    
+    
+    &__text-block {
+        padding: 30px 20px;
+    }
+    
+
+    &__title {
+        font-size: 22px;
+        text-transform: uppercase;
+        overflow: auto;
+    }
+    
+    &__text {
+        font-size: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    &__calendar {
+        opacity: 0.7;
+    }
+    
+    &__footer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        padding: 0 0 30px 20px;
+    }
+    
+    &__avatar {
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
 }
 
-/*added block into ITEM */
-.item__content {
-    display: flex;
-    flex-direction: column;
-    font-size: 18px;
-    background-color: #ffffff;
-}
-
-.item__main {
-    flex: 1 1 auto;
-}
-
-// .image-wrapper {
-//     margin-bottom: 18px;
-// }
 
 .picture {
     width: 100%;
 }
-
-.item__text-block {
-    padding: 30px 20px;
-}
-
-.item__title {
-    font-size: 22px;
-    text-transform: uppercase;
-    overflow: auto;
-}
-
-.item__text {
-    font-size: 18px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.item__calendar {
-    opacity: 0.7;
-}
-
-.item__footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-    padding: 0 0 30px 20px;
-}
-
-.item__avatar {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
 
 //======================
 
@@ -426,22 +423,23 @@
     flex-direction: row;
     flex-wrap: wrap;
     font-size: 0px;
-    list-style-type: none;
     margin-bottom: 100px;
-    // height: 440px;
 
-}
+    &__section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+    }
 
-.gallery__item {
-    width: 25%;
-    height: 30%;
-    padding: 3px;
-}
-
-.gallery__item--half {
-    width: 50%;
-    height: 100%;
+    &__item {
+        width: 50%;
+        padding: 3px;
+    }
     
+    //modifier
+    &__item--large {
+        width: 100%;  
+    }
 }
 
 
