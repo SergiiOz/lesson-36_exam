@@ -529,18 +529,28 @@
     <script src="./slick/slick.min.js"></script>
 
     <script>
+
+        var myMarker = {lat: 50.619724, lng: 26.249474};
+        var imageMarker = './images/img-markerMap.png';
         var map;
+
         function initMap() {
             map = new google.maps.Map(document.getElementById('map'), {
-                center: { lat: -34.397, lng: 150.644 },
-                zoom: 8
+                center: { lat: 50.616667, lng: 26.250000 },
+                zoom: 16,
+            });
+
+            var marker = new google.maps.Marker({
+                position: myMarker,
+                map: map,
+                icon: imageMarker,
             });
         }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA7wkbKyL7F_7kmF3kkH8Rp7pvXwL0m03I&callback=initMap" async defer></script>
 
     <script src="./js/main.js"></script>
-
+    
 </body>
 
 </html>
