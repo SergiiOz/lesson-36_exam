@@ -466,9 +466,9 @@
 }
 
 .footer__section-top {
-    min-height: 700px;
+    // min-height: 700px;
     border: 1px solid #000000;
-    background-color: rgb(214, 206, 206);
+    // background-color: rgb(214, 206, 206);
 }
 
 .footer__section-bottom {
@@ -557,6 +557,16 @@
 .address__item {
     margin-top: 10px;
 }
+
+#map {
+    height: 100%;
+ }
+
+ .map {
+     height: 100%;
+     min-height: 700px;
+     background-color: red;
+ }
 
 
 

@@ -451,7 +451,9 @@
             </div>
 
             <!-- MAP -->
-            <div class="footer__section-top"></div>
+            <div class="footer__section-top">
+                <div class="map" id="map"></div>
+            </div>
 
             <!-- footer bottom -->
             <div class="footer__section-bottom">
@@ -525,6 +527,18 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- for slick slider-->
     <script src="./slick/slick.min.js"></script>
+
+    <script>
+        var map;
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: -34.397, lng: 150.644 },
+                zoom: 8
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+
     <script src="./js/main.js"></script>
 
 </body>

@@ -363,9 +363,7 @@
 }
 
 .footer__section-top {
-  min-height: 700px;
   border: 1px solid #000000;
-  background-color: #d6cece;
 }
 
 .footer__section-bottom {
@@ -445,6 +443,16 @@
 
 .address__item {
   margin-top: 10px;
+}
+
+#map {
+  height: 100%;
+}
+
+.map {
+  height: 100%;
+  min-height: 700px;
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */
