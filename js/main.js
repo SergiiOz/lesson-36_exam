@@ -1,13 +1,12 @@
 $(document).ready(function () {
-    // $('.header__text-block').slick({
-    //     autoplay: true,
-    //     infinite: true,
-    //     // speed: 300,
-    //     slidesToShow: 1,
-    //     adaptiveHeight: true,
-    //     dots: true,
-
-    // });
+    $('.header__text-block').slick({
+        autoplay: true,
+        infinite: true,
+        speed: 4000,
+        slidesToShow: 1,
+        dots: false,
+        arrows: false,
+    });
 
     $('.slider').slick({
         autoplay: true,
@@ -24,3 +23,10 @@ $(document).ready(function () {
 });
 
 
+// scroll to 'main' section
+let btnScroll = document.getElementsByClassName('js-btn-scroll')[0];
+let main = document.getElementsByClassName('js-main')[0];
+
+btnScroll.addEventListener('click', function () {
+    main.scrollIntoView({ behavior: "smooth" });
+});
